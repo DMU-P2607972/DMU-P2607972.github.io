@@ -1,5 +1,5 @@
 body {
-    background-color: #03034c;
+    background-color: #75a9db;
 }
 
 /*
@@ -8,8 +8,12 @@ in order to assign specific properties to it that are different to general image
 */
 
 .title {
-    margin: 2%;
-    width: 96%;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 1%;
+    margin-bottom: 0;
+    width: 98%;
     border: 10px ridge #b3e2f8;
     box-sizing: border-box;
     border-radius: 10px;
@@ -17,18 +21,19 @@ in order to assign specific properties to it that are different to general image
 }
 
 /*
-Navigation buttons needed to be separated, highlighted from other elements on the pages so I assigned them a special
-class button and have set certain properties to that class in order to highlight the buttons.
+I wanted to separate the navigation buttons so that they were clearly distinct form each other and highlighted from
+other elements on the pages so I assigned them a special
+class "button" and have set certain properties to that class in order to highlight the buttons.
 */
 
 .button {
     float: left;
-    width: 46%;
+    width: 48%;
     text-align: center;
     background-color: #9edbff;
     padding: 0;
     box-sizing: border-box;
-    margin: 2%;
+    margin: 1%;
     cursor: pointer;
     border: 10px ridge #b3e2f8;
     border-radius: 10px;
@@ -49,9 +54,10 @@ General properties have been assigned to div elements so they would look generic
 */
 
 div {
-    margin: 2%;
+    margin: 1%;
+    margin-top:0;
     float: left;
-    width: 96%;
+    width: 98%;
     text-align: center;
     background-color: #ffffff;
     padding: 10px;
@@ -61,10 +67,13 @@ div {
     font-family: "Times New Roman", sans-serif;
 }
 
-h1 {
+h1, h3 {
     color: #1010c1;
 }
 
+h3 {
+    margin: 0;
+}
 /*
 I wanted text in paragraphs to be aligned to the left of the container so I generalised it by aligning text to the
 left for all <p> tags
@@ -72,11 +81,12 @@ left for all <p> tags
 
 p {
     text-align: left;
+    margin: 0;
 }
 
 .cast {
-    margin-top: 25px;
-    width: 65%;
+    margin: 1%;
+    width: 71%;
     display: inline;
     float: left;
     text-align: left;
@@ -88,8 +98,8 @@ p {
 }
 
 video {
-    margin: 2%;
-    width: 96%;
+    margin-left: 1%;
+    width: 98%;
     border: 10px ridge #b3e2f8;
     box-sizing: border-box;
     border-radius: 10px;
@@ -98,9 +108,9 @@ video {
 footer {
     display: inline-flex;
     justify-content: center;
-    margin: 2%;
+    margin: 1%;
     padding: 10px;
-    width: 96%;
+    width: 98%;
     border: 10px ridge #b3e2f8;
     box-sizing: border-box;
     border-radius: 10px;
@@ -110,13 +120,16 @@ footer {
 
 }
 
+/*Image shares space with the text next to it, therefore it only takes up 25% of the width whilst the text takes up 71%
+of the width and the rest is taken by the margin that divides */
 img {
     float: left;
     width: 25%;
+    min-width:130px;
     border: 10px ridge #b3e2f8;
     box-sizing: border-box;
     border-radius: 10px;
-    margin: 25px;
+    margin: 1%;
 }
 
 .about-cast {
@@ -140,8 +153,9 @@ img {
 }
 
 .aud {
-    margin-left: 2%;
-    width: 96%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    width: 98%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -152,6 +166,24 @@ This was the only solution to the problem I have encountered when I had to chang
 I had to assign a class to a <p> element within footer in order to fix the text placement within the <footer>
 */
 
+a:visited, a:link {
+    color: #1010d6;
+    text-decoration: none;
+}
+
 .footer {
     text-align: center;
+}
+
+.name {
+    margin-bottom: 0;
+}
+
+/*
+I needed to put an accent on the external link and therefore I have increased the size of lettering to be twice as big
+as the text before the link word
+*/
+
+.foot-a {
+    font-size: 30px;
 }
