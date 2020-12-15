@@ -2,4 +2,4 @@
 
 Coursework 1 website link:
 
-<a href="https://dmu-p2607972.github.io/Coursework-1/Page-1.html">Coursework 1 - website</a>
+<a href="https://dmu-p2607972.github.io/cw1/Coursework-1/Page-1.html">Coursework 1 - website</a>
